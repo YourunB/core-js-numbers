@@ -478,8 +478,7 @@ function getFloatOnString(str) {
  * '10', 8              => 8
  */
 function getIntegerOnString(str, base) {
-  const res = Number.parseInt(str, base);
-  return res;
+  return Number.parseInt(str, base);
 }
 
 /**
@@ -493,8 +492,9 @@ function getIntegerOnString(str, base) {
  * 3.5      => false
  * 2 ** 53  => false
  */
-function isSafeInteger(/* number */) {
-  throw new Error('Not implemented');
+function isSafeInteger(number) {
+  const res = number;
+  return Number.isSafeInteger(res);
 }
 
 /**
