@@ -239,11 +239,7 @@ function toNumber(value, def) {
  *   0  => 0
  */
 function getCube(num) {
-  let res = num;
-  for (let i = 0; i < 2; i += 1) {
-    res *= num;
-  }
-  return res;
+  return num ** 3;
 }
 
 /**
